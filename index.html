@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configuración de prendas</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
+    type="text/css">
+  <link rel="stylesheet" href="./src/css/main.min.css">
+</head>
+
+<body>
+  <header class="header-config">
+    <h2>CONFIGURAR ZONAS DE EDICIÓN</h2>
+  </header>
+  <div class="container row">
+    <div class="container__img col-md-8">
+      <h4 id="image-type"></h4>
+      <img id="mainImage" src="" alt="">
+      <canvas id="canvas-draw" class="canvas-draw"></canvas>
+      <br>
+    </div>
+    <div class="container__config col-md-4">
+      <h4>AREAS</h4>
+      <div class="row center-xs">
+        <button class="btn" onClick="insertShape()">Insertar</button>
+        <button class="btn" onClick="deleteObjects()">Eliminar</button>
+      </div>
+      <ul id="checkboxList" class="checkboxList">
+        <h4>CONFIGURACIÓN</h4>
+        <li class="checkboxList__item">
+          <input type="checkbox" name="textAvaible" id="textAvaible" class="checkboxList__checkbox" />
+          <label for="textAvaible">
+            TEXTO
+          </label>
+        </li>
+        <li class="checkboxList__item">
+          <input type="checkbox" name="motivoAvaible" id="motivoAvaible" class="checkboxList__checkbox" />
+          <label for="motivoAvaible">
+            MOTIVO
+          </label>
+        </li>
+        <li class="checkboxList__item">
+          <input type="checkbox" name="imageAvaible" id="imageAvaible" class="checkboxList__checkbox" />
+          <label for="imageAvaible">
+            IMAGEN
+          </label>
+        </li>
+        <li class="checkboxList__item">
+          <input type="checkbox" name="sizeAvaible" id="sizeAvaible" class="checkboxList__checkbox" />
+          <label for="sizeAvaible">
+            TAMAÑO
+          </label>
+        </li>
+        <li class="checkboxList__item">
+          <input type="checkbox" name="centerAvaible" id="centerAvaible" class="checkboxList__checkbox" />
+          <label for="centerAvaible">
+            CENTRADO
+          </label>
+        </li>
+      </ul>
+      <div class="row center-xs">
+        <button class="btn btn-yellow" onClick="saveData()">Guardar</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.6.5/fabric.min.js"></script>
+  <script type="module" src="./src/js/main.js"></script>
+</body>
+
+</html>

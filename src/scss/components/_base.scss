@@ -1,0 +1,68 @@
+
+/*
+ Font family
+*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;700;900&display=swap');
+
+
+/*
+    Palette
+*/
+
+$main-color: #000131;
+
+/*
+  Reset
+*/
+
+body {
+    background-color: #efefef;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-rendering: geometricPrecision;
+    box-sizing: border-box;
+}
+
+button {
+    appearance: none;
+    outline: none;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+figure {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    color: $main-color;
+}
+
+.container {
+    margin: auto;
+    max-width: 1023px;
+    padding: 100px 15px;
+}
